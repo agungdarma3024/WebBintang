@@ -225,10 +225,11 @@ export const Contact = () => {
 
                   <Button
                     type="submit"
-                    className="w-full bg-amber-600 hover:bg-amber-700 text-white py-6 text-lg group"
+                    disabled={isSubmitting}
+                    className="w-full bg-amber-600 hover:bg-amber-700 text-white py-6 text-lg group disabled:opacity-50 disabled:cursor-not-allowed"
                     size="lg"
                   >
-                    Send Message
+                    {isSubmitting ? 'Sending...' : 'Send Message'}
                     <Send className="ml-2 group-hover:translate-x-1 transition-transform" size={20} />
                   </Button>
                 </form>
