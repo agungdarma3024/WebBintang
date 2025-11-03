@@ -1,19 +1,44 @@
-import React, { useState } from 'react';
-import { ExternalLink, ChevronLeft, ChevronRight } from 'lucide-react';
+import React, { useState, useEffect } from 'react';
+import { ExternalLink, ChevronLeft, ChevronRight, Loader2 } from 'lucide-react';
 import { Card, CardContent } from './ui/card';
 import { Button } from './ui/button';
-import { mockPortfolio } from '../data/mock';
+import axios from 'axios';
+
+const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
+const API = `${BACKEND_URL}/api`;
 
 export const Portfolio = () => {
   const [activeCategory, setActiveCategory] = useState('all');
   const [currentPage, setCurrentPage] = useState(0);
+  const [portfolioData, setPortfolioData] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
   
   const categories = ['all', 'MICE', 'Multimedia', 'Ceremonies', 'Workshops'];
   const itemsPerPage = 6;
 
+  // Fetch portfolio data from backend
+  useEffect(() => {
+    const fetchPortfolio = async () => {
+      try {
+        setLoading(true);
+        const response = await axios.get(`${API}/portfolio`);
+        setPortfolioData(response.data);
+        setError(null);
+      } catch (err) {
+        console.error('Error fetching portfolio:', err);
+        setError('Failed to load portfolio items');
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchPortfolio();
+  }, []);
+
   const filteredProjects = activeCategory === 'all'
-    ? mockPortfolio
-    : mockPortfolio.filter(project => project.category === activeCategory);
+    ? portfolioData
+    : portfolioData.filter(project => project.category === activeCategory);
 
   const totalPages = Math.ceil(filteredProjects.length / itemsPerPage);
   const displayedProjects = filteredProjects.slice(
