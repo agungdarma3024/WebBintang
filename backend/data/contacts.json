@@ -1,1 +1,11 @@
-[]
+[
+  {
+    "id": "CNT-20251103020055",
+    "name": "Budi Santoso",
+    "email": "budi.santoso@example.com",
+    "phone": "081234567890",
+    "message": "Saya tertarik dengan layanan MICE untuk event perusahaan kami. Mohon informasi lebih lanjut.",
+    "timestamp": "2025-11-03T02:00:55.233980",
+    "status": "new"
+  }
+]
