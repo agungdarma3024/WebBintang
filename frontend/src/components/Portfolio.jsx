@@ -85,8 +85,17 @@ export const Portfolio = () => {
         </div>
 
         {/* Portfolio Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
-          {displayedProjects.map((project) => (
+        {loading ? (
+          <div className="flex justify-center items-center py-20">
+            <Loader2 className="animate-spin text-amber-600" size={48} />
+          </div>
+        ) : error ? (
+          <div className="text-center py-20">
+            <p className="text-red-600 text-lg">{error}</p>
+          </div>
+        ) : (
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+            {displayedProjects.map((project) => (
             <Card
               key={project.id}
               className="group overflow-hidden hover:shadow-2xl transition-all duration-300 border-0"
