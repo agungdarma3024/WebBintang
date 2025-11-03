@@ -1,0 +1,110 @@
+[
+  {
+    "id": 1,
+    "title": "International Business Summit 2024",
+    "description": "Large-scale international convention with 1000+ attendees, featuring keynote speakers and networking sessions.",
+    "category": "MICE",
+    "client": "PT. Bank Mandiri",
+    "year": "2024",
+    "location": "Jakarta Convention Center"
+  },
+  {
+    "id": 2,
+    "title": "National Industry Workshop Series",
+    "description": "Multi-city workshop series focusing on SME development and industrial revitalization.",
+    "category": "Workshops",
+    "client": "Kementerian Perindustrian",
+    "year": "2024",
+    "location": "Jakarta, Bandung, Semarang"
+  },
+  {
+    "id": 3,
+    "title": "Corporate Brand Launch Event",
+    "description": "Comprehensive multimedia production for product launch including video, photography, and live streaming.",
+    "category": "Multimedia",
+    "client": "Tech Startup Indonesia",
+    "year": "2024",
+    "location": "Jakarta"
+  },
+  {
+    "id": 4,
+    "title": "Asia Pacific Excellence Awards",
+    "description": "Prestigious awards ceremony recognizing business excellence with 500+ VIP guests.",
+    "category": "Ceremonies",
+    "client": "BusinessNews Asia",
+    "year": "2023",
+    "location": "Bali International Convention Centre"
+  },
+  {
+    "id": 5,
+    "title": "Digital Marketing Summit",
+    "description": "Two-day marketing conference featuring industry experts and hands-on workshops.",
+    "category": "MICE",
+    "client": "Marketing Association Indonesia",
+    "year": "2023",
+    "location": "Jakarta"
+  },
+  {
+    "id": 6,
+    "title": "Furniture Design Training Program",
+    "description": "Technical training for SME furniture makers focusing on modern design techniques.",
+    "category": "Workshops",
+    "client": "Dinas Perindustrian Jawa Tengah",
+    "year": "2023",
+    "location": "Semarang"
+  },
+  {
+    "id": 7,
+    "title": "Corporate Annual Gathering",
+    "description": "Full event management including multimedia, photography, and entertainment coordination.",
+    "category": "Ceremonies",
+    "client": "PT. Indonesia Power",
+    "year": "2023",
+    "location": "Bandung"
+  },
+  {
+    "id": 8,
+    "title": "Startup Tech Provider Conference",
+    "description": "Technology conference connecting startups with industry stakeholders.",
+    "category": "MICE",
+    "client": "Startup Indonesia Network",
+    "year": "2024",
+    "location": "Jakarta"
+  },
+  {
+    "id": 9,
+    "title": "Government Agency Media Production",
+    "description": "Comprehensive video documentation and photography for government programs.",
+    "category": "Multimedia",
+    "client": "Sekretariat Jenderal Kemenperin",
+    "year": "2023",
+    "location": "Jakarta"
+  },
+  {
+    "id": 10,
+    "title": "Entrepreneurship Development Workshop",
+    "description": "Capacity building program for new entrepreneurs in manufacturing sector.",
+    "category": "Workshops",
+    "client": "Direktorat IKM",
+    "year": "2024",
+    "location": "Jakarta, Banten"
+  },
+  {
+    "id": 11,
+    "title": "Industry Exhibition & Trade Fair",
+    "description": "Large exhibition showcasing Indonesian manufacturing excellence.",
+    "category": "MICE",
+    "client": "Ministry of Industry",
+    "year": "2023",
+    "location": "JIExpo Kemayoran"
+  },
+  {
+    "id": 12,
+    "title": "Coffee Processing Training Program",
+    "description": "Specialized training for coffee industry professionals on processing techniques.",
+    "category": "Workshops",
+    "client": "Direktorat Jenderal Industri Agro",
+    "year": "2023",
+    "location": "Bandung"
+  }
+]
