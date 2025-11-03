@@ -131,6 +131,7 @@ export const Portfolio = () => {
             </Card>
           ))}
         </div>
+        )}
 
         {/* Pagination */}
         {totalPages > 1 && (
